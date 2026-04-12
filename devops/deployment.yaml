@@ -13,8 +13,8 @@ spec:
         app: feature
     spec:
       containers:
-      - name: backend
-        image: appurv25/feature-backend:latest
-        imagePullPolicy: Always
+        - name: backend
+          image: appurv25/feature-backend:latest
+          imagePullPolicy: Always
           ports:
-        - containerPort: 5000
+            - containerPort: 5000
