@@ -17,3 +17,4 @@ spec:
         image: your-docker-image
         ports:
         - containerPort: 5000
+image: appurv25/feature-backend:latest
