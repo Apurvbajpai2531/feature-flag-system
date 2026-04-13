@@ -137,4 +137,11 @@ Username: admin
 Built and deployed a production-like DevOps system using Kubernetes,
 ArgoCD (GitOps), Prometheus, and Grafana.
 
+Screenshot 
+![App](screenshots/WhatsApp%20Image%202026-04-13%20at%201.01.50%20AM.jpeg)
 
+![K8s](screenshots/WhatsApp%20Image%202026-04-13%20at%2012.59.43%20AM.jpeg)
+
+![Grafana](screenshots/WhatsApp%20Image%202026-04-13%20at%2012.59.43%20AM%20(2).jpeg)
+
+------------------------------------------------------------------------------------
