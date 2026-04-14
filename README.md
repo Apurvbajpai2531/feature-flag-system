@@ -66,7 +66,7 @@ deployment, GitOps workflow, and monitoring using modern tools like
     docker build -t <your-docker-username>/feature-backend:latest .
     docker push <your-docker-username>/feature-backend:latest
 
-![Images](image1.jpeg)
+![Images](images/image1.jpeg)
 
 ------------------------------------------------------------------------
 
@@ -97,6 +97,7 @@ Username: admin
 #for accessing argocd ui password run following command:
     kubectl -n argocd get secret argocd-initial-admin-secret -o jsonpath="{.data.password}" | base64 -d && echo
 
+![ArgoCD](images/image3.jpeg)
 ------------------------------------------------------------------------
 
 # 🌐 Application Access for ArgoCD
@@ -105,7 +106,7 @@ Username: admin
 
 Open: http://localhost:5000
 
-![ArgoCD](image3.jpeg)
+
 
 ------------------------------------------------------------------------
 
@@ -114,7 +115,7 @@ Open: http://localhost:5000
     helm install prometheus prometheus-community/prometheus
     helm install grafana grafana/grafana
 
-![Monitoring](image2.jpeg)
+![Monitoring](images/image2.jpeg)
 
 
 ------------------------------------------------------------------------
@@ -134,7 +135,8 @@ Username: admin
     kubectl get secret grafana -o jsonpath="{.data.admin-password}" | base64 --decode ; echo
 
 # Grafana Dashboard
-![Grafana Dashboard](images4.jpeg)
+
+![Grafana Dashboard](images/images4.jpeg)
 
 ------------------------------------------------------------------------
 
