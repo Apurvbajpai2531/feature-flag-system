@@ -66,6 +66,8 @@ deployment, GitOps workflow, and monitoring using modern tools like
     docker build -t <your-docker-username>/feature-backend:latest .
     docker push <your-docker-username>/feature-backend:latest
 
+![Images](image1.jpeg)
+
 ------------------------------------------------------------------------
 
 # Deploy on Kubernetes
@@ -103,12 +105,17 @@ Username: admin
 
 Open: http://localhost:5000
 
+![ArgoCD](image3.jpeg)
+
 ------------------------------------------------------------------------
 
 # 📊 Monitoring Setup
 
     helm install prometheus prometheus-community/prometheus
     helm install grafana grafana/grafana
+
+![Monitoring](image2.jpeg)
+
 
 ------------------------------------------------------------------------
 
@@ -118,12 +125,16 @@ Open: http://localhost:5000
 
 Open: http://localhost:3002
 
+
 # Login
 
 Username: admin
 
 #for accessing the grafana password run the following command
     kubectl get secret grafana -o jsonpath="{.data.admin-password}" | base64 --decode ; echo
+
+# Grafana Dashboard
+![Grafana Dashboard](images4.jpeg)
 
 ------------------------------------------------------------------------
 
@@ -136,12 +147,4 @@ Username: admin
 ------------------------------------------------------------------------
 Built and deployed a production-like DevOps system using Kubernetes,
 ArgoCD (GitOps), Prometheus, and Grafana.
-
-Screenshot 
-![App](screenshots/WhatsApp%20Image%202026-04-13%20at%201.01.50%20AM.jpeg)
-
-![K8s](screenshots/WhatsApp%20Image%202026-04-13%20at%2012.59.43%20AM.jpeg)
-
-![Grafana](screenshots/WhatsApp%20Image%202026-04-13%20at%2012.59.43%20AM%20(2).jpeg)
-
 ------------------------------------------------------------------------------------
